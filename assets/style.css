@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: thistle;
+}
+.grid-container {
+    display: grid;
+    border: 1px solid tomato;
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    box-shadow: 2px 2px 5px #999;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Izq der"
+      "Izq der";
+  }
+
+
+  .Izq { 
+      grid-area: Izq; 
+      text-align: center;
+      background-color: white;
+
+}
+  .der { 
+      grid-area: der; 
+      /* width: 80%; */
+      height: 500px;
+      background-color: #f64f59;
+
+    }
+
+    .der > h1 {
+        padding-top: 130px;
+        font-size: 45px;
+        color: white;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .der >p {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding-left: 75px;
+        padding-right: 75px;
+        line-height: 30px;
+    }
+.iconos {
+    margin-top: 50px;
+}
+
+.formulario {
+    margin-top: 40px;
+}
+.olvidado {
+    margin-top: 30px;
+}
+    .iconos > i {
+        border: 1px solid #888;
+        border-radius: 100%;
+        margin: 20px;
+        font-size: 35px;
+        padding: 10px;
+    }
+
+    .fa-facebook-f {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+input[type="submit"]{
+        width:35%;
+        padding:8px 16px;
+        margin-top:12px;
+        border-radius:40px;
+        display:block;
+        color:#fff;
+        background-color: #f64f59;
+        border-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+} 
+
+
+input[type="text"],
+input[type="password"]{
+	width:200px;
+	padding:10px 30px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:silver;
+	margin:8px 0;
+	display:inline-block;
+}
